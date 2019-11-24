@@ -4,7 +4,7 @@
 #include <conio.h>
 using namespace std;
 
-//search sentinel
+//search binary
 int main()
 {
 
