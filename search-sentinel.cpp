@@ -21,7 +21,7 @@ int main()
     }
 
     cout << "============================================";
-    cout << "Masukan Elemen yang dicari = ";
+    cout << "Masukan data yang dicari = ";
     cin >> input1;
 
     for (int i = 0; i < input; i++)
