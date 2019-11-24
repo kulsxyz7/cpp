@@ -4,6 +4,7 @@
 #include <conio.h>
 using namespace std;
 
+//search sequential
 int main()
 {
 
