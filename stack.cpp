@@ -7,6 +7,7 @@ using namespace std;
 
 typedef struct STACK
 {
+    int top;
     char data[10][10];
 };
 
@@ -50,7 +51,7 @@ void Push(char d[10])
 void Pop()
 {
     cout << "Data yang terambil = \n"
-         << tumpuk.data[tumpuk.top];
+         << tumpuk.data[tumpuk.top] << endl;
     tumpuk.top--;
 }
 
@@ -61,10 +62,11 @@ void clearAll()
 
 void cetak()
 {
-    for (int i = tumpuk.top; i >= 0; i--;)
+    for (int i = tumpuk.top; i >= 0; i--)
     {
         cout << "Data : \n"
              << tumpuk.data[i];
+        cout << endl;
     }
 }
 
@@ -93,7 +95,7 @@ int main()
             }
             else
             {
-                cout << "Data Sudah Penuh";
+                cout << "Data Sudah Penuh" << endl;
             }
         }
         else if (pil == 2)
@@ -104,7 +106,7 @@ int main()
             }
             else
             {
-                cout << "Data Masih Kosong ! ";
+                cout << "Data Masih Kosong ! " << endl;
             }
         }
         else if (pil == 3)
@@ -115,17 +117,17 @@ int main()
             }
             else
             {
-                cout << "Data Masih Kosong ! ";
+                cout << "Data Masih Kosong ! " << endl;
             }
         }
         else if (pil == 4)
         {
             clearAll();
-            cout << "Data Terhapus ! ";
+            cout << "Data Terhapus ! " << endl;
         }
         else
         {
-            cout << "Input Salah ! ";
+            cout << "Input Salah ! " << endl;
         }
         getch();
     } while (pil != 5);
