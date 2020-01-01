@@ -6,19 +6,13 @@ using namespace std;
 
 int main () {
 
-    int n;
+    int n,H,hIni;
     
-    cout<<"1. Senin"<<endl;
-    cout<<"2. Selasa"<<endl;
-    cout<<"3. Rabu"<<endl;
-    cout<<"4. Kamis"<<endl;
-    cout<<"5. Jum'at"<<endl;
-    cout<<"6. Sabtu"<<endl;
-    cout<<"7. Minggu"<<endl;
-    cout<<endl;
-
+    cout<<"Masukan N hari yang lalu : ";
+    cin>>H;
     cout<<"Masukan Hari Ini : ";
-    cin>>n;
+    cin>>hIni;
+    n = H-hIni;
     if ( n == 1 ) {
         cout<<"Hari ini Adalah Senin";
         cout<<"Kemarin adalah Hari Minggu";
