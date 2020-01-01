@@ -4,15 +4,19 @@
 #include <conio.h>
 using namespace std;
 
+void mergeSort(int l, int r, A[] ) {
+    
+}
+
 
 
 int main()
 {
 
-    int A[] = {23, 1, 5, 43, 8, 7};
+    int A[] = {2, 4, 1, 6, 8, 5, 3, 7};
 
     cout << "Data Sebelum di Sort = " << endl;
-    for (int i = 0; i < 6; i++)
+    for (int i = 0; i < 8; i++)
     {
         cout << A[i] << "  ";
     }
@@ -20,7 +24,7 @@ int main()
          << endl;
     
     cout<<"Data Sesudah di Sorting = "<<endl;
-    for ( int i = 0; i < 6; i++ ) {
+    for ( int i = 0; i < 8; i++ ) {
         cout<< A[i]<<" ";
     }
 }
